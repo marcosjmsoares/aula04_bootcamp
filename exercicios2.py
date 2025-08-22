@@ -35,20 +35,29 @@
 
 # 6. Eliminação de Duplicatas
 # Objetivo: Dada uma lista de emails, remover todos os duplicados.
-lista_email:list = ["marcos@gmail.com", "david@gmail.com", "marcos@gmail.com"]
-emails_unicos = list(set(lista_email))
+# lista_email:list = ["marcos@gmail.com", "david@gmail.com", "marcos@gmail.com"]
+# emails_unicos = list(set(lista_email))
 
-print(emails_unicos)
+# print(emails_unicos)
 
 
 # 7. Filtragem de Dados
 # Objetivo: Dada uma lista de idades, filtrar apenas aquelas que são maiores ou iguais a 18.
-
+lista_idade:list = [10,20,30,14,15,13,25]
+lista_maior_18:list = [idade for idade in lista_idade if idade >= 18]
+    
+print(lista_maior_18)
 
 
 # 8. Ordenação Personalizada
 # Objetivo: Dada uma lista de dicionários representando pessoas, ordená-las pelo nome.
-
+pessoas = [{"nome":"maria","idade":"22"},
+           {"nome":"rhassan","idade":"39"},
+           {"nome":"thiago","idade":"26"},
+           {"nome":"thales","idade":"17"},
+           {"nome":"marcos","idade":"33"}]
+pessoas.sort(key=lambda pessoa: pessoa["nome"])
+print(pessoas)
 
 
 # 9. Agregação de Dados
