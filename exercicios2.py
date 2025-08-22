@@ -43,30 +43,42 @@
 
 # 7. Filtragem de Dados
 # Objetivo: Dada uma lista de idades, filtrar apenas aquelas que são maiores ou iguais a 18.
-lista_idade:list = [10,20,30,14,15,13,25]
-lista_maior_18:list = [idade for idade in lista_idade if idade >= 18]
+# lista_idade:list = [10,20,30,14,15,13,25]
+# lista_maior_18:list = [idade for idade in lista_idade if idade >= 18]
     
-print(lista_maior_18)
+# print(lista_maior_18)
 
 
 # 8. Ordenação Personalizada
 # Objetivo: Dada uma lista de dicionários representando pessoas, ordená-las pelo nome.
-pessoas = [{"nome":"maria","idade":"22"},
-           {"nome":"rhassan","idade":"39"},
-           {"nome":"thiago","idade":"26"},
-           {"nome":"thales","idade":"17"},
-           {"nome":"marcos","idade":"33"}]
-pessoas.sort(key=lambda pessoa: pessoa["nome"])
-print(pessoas)
+# pessoas = [{"nome":"maria","idade":"22"},
+#            {"nome":"rhassan","idade":"39"},
+#            {"nome":"thiago","idade":"26"},
+#            {"nome":"thales","idade":"17"},
+#            {"nome":"marcos","idade":"33"}]
+# pessoas.sort(key=lambda pessoa: pessoa["nome"])
+# print(pessoas)
 
 
 # 9. Agregação de Dados
 # Objetivo: Dado um conjunto de números, calcular a média.
-
+# lista=[123.45,10.44,10.99,15,123,23]
+# soma:int = 0
+# quant:int = 0
+# for valor in lista:
+#     soma += valor
+#     quant += 1
+# print(soma/quant)
 
 
 # 10. Divisão de Dados em Grupos
 # Objetivo: Dada uma lista de valores, dividir em duas listas: uma para valores pares e outra para ímpares.
+lista_valores = range(10)
+lista_par = [par for par in lista_valores if par % 2 == 0]
+lista_impar = [par for par in lista_valores if par % 2 == 1]
+
+print(f"Pares: {lista_par}, Impares: {lista_impar}")
+
 
 
 
