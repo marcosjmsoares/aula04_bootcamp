@@ -83,23 +83,28 @@
 # Exercícios com Dicionários
 # 11. Atualização de Dados
 # Objetivo: Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
-lista_produtos = [{"nome": "TV", "preco": "1500"},
-                  {"nome": "Airfry", "preco": "500"},
-                  {"nome": "Notebook", "preco": "3500"},
-                  {"nome": "Geladeira", "preco": "5500"},
-                  {"nome": "Fogão", "preco": "700"}
-                  ]
 
-for produto in lista_produtos:
-    if produto["nome"] == "Notebook":
-        produto["preco"] = 4000
+# lista_produtos = [{"nome": "TV", "preco": "1500"},
+#                   {"nome": "Airfry", "preco": "500"},
+#                   {"nome": "Notebook", "preco": "3500"},
+#                   {"nome": "Geladeira", "preco": "5500"},
+#                   {"nome": "Fogão", "preco": "700"}
+#                   ]
 
-print(lista_produtos)        
+# for produto in lista_produtos:
+#     if produto["nome"] == "Notebook":
+#         produto["preco"] = 4000
+
+# print(lista_produtos)        
 
 # 12. Fusão de Dicionários
 # Objetivo: Dados dois dicionários, fundi-los em um único dicionário.
+# dicionario1 = {"nome": "TV", "preco": "1500"}
+# dicionario2 = {"nome2": "Airfry", "preco2": "500"}
 
+# dicionario_fundido = {**dicionario1, **dicionario2}
 
+# print(dicionario_fundido)
 
 # 13. Filtragem de Dados em Dicionário
 # Objetivo: Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
