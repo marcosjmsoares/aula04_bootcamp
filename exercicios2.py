@@ -108,25 +108,30 @@
 
 # 13. Filtragem de Dados em Dicionário
 # Objetivo: Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
-lista_produtos = [{"nome": "TV", "quantidade": 0},
-                  {"nome": "Airfry", "quantidade": 5},
-                  {"nome": "Notebook", "quantidade": 0},
-                  {"nome": "Geladeira", "quantidade": 0},
-                  {"nome": "Fogão", "quantidade": 15}
-                  ]
+# lista_produtos = [{"nome": "TV", "quantidade": 0},
+#                   {"nome": "Airfry", "quantidade": 5},
+#                   {"nome": "Notebook", "quantidade": 0},
+#                   {"nome": "Geladeira", "quantidade": 0},
+#                   {"nome": "Fogão", "quantidade": 15}
+#                   ]
 
-lista_com_estoque = [{}]
+# lista_com_estoque = []
 
-for produto in lista_produtos:
-    if produto["quantidade"] > 0:
-        lista_com_estoque += produto
-        print(produto)
-
-print(lista_com_estoque)        
+# for produto in lista_produtos:
+#     if produto["quantidade"] > 0:
+#         lista_com_estoque += produto
+#         print(produto)
+  
 
 # 14. Extração de Chaves e Valores
 # Objetivo: Dado um dicionário, criar listas separadas para suas chaves e valores.
+dicionario = {"a":1,"b":2,"c":3}
 
+chaves = list(dicionario.keys())
+valores = list(dicionario.values())
+
+print(f"Chaves: {chaves}")
+print(f"Valores: {valores}")
 
 # 15. Contagem de Frequência de Itens
 # Objetivo: Dada uma string, contar a frequência de cada caractere usando um dicionário.
