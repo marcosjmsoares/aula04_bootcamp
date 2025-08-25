@@ -73,20 +73,28 @@
 
 # 10. Divisão de Dados em Grupos
 # Objetivo: Dada uma lista de valores, dividir em duas listas: uma para valores pares e outra para ímpares.
-lista_valores = range(10)
-lista_par = [par for par in lista_valores if par % 2 == 0]
-lista_impar = [par for par in lista_valores if par % 2 == 1]
+# lista_valores = range(10)
+# lista_par = [par for par in lista_valores if par % 2 == 0]
+# lista_impar = [par for par in lista_valores if par % 2 == 1]
 
-print(f"Pares: {lista_par}, Impares: {lista_impar}")
-
-
-
+# print(f"Pares: {lista_par}, Impares: {lista_impar}")
 
 
 # Exercícios com Dicionários
 # 11. Atualização de Dados
 # Objetivo: Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
+lista_produtos = [{"nome": "TV", "preco": "1500"},
+                  {"nome": "Airfry", "preco": "500"},
+                  {"nome": "Notebook", "preco": "3500"},
+                  {"nome": "Geladeira", "preco": "5500"},
+                  {"nome": "Fogão", "preco": "700"}
+                  ]
 
+for produto in lista_produtos:
+    if produto["nome"] == "Notebook":
+        produto["preco"] = 4000
+
+print(lista_produtos)        
 
 # 12. Fusão de Dicionários
 # Objetivo: Dados dois dicionários, fundi-los em um único dicionário.
