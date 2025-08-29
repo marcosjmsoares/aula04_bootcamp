@@ -42,7 +42,7 @@ def gerar_kpi_de_bonus() -> dict[str, float | str]:
         except ValueError:
             print("Entrada inválida para o bônus. Por favor, digite um número.")
 
-    # Exemplo simples de KPI
+   
     bonus_recebido: float = 1000 + salario * bonus  
 
     # Monta o dicionário de resultado
